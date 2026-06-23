@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ireland — A Personal Guide for Sandra & Ted | ETA Permits</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green: #1A5C38;
+  --green-light: #2D7A4F;
+  --green-pale: #EAF3DE;
+  --green-mid: #C8E6C9;
+  --gold: #B8860B;
+  --gold-pale: #FFF8E1;
+  --teal: #0D6B6B;
+  --teal-pale: #E0F7FA;
+  --blue: #1565C0;
+  --blue-pale: #E3F2FD;
+  --purple: #4527A0;
+  --purple-pale: #EDE7F6;
+  --coral: #BF360C;
+  --coral-pale: #FBE9E7;
+  --amber: #E65100;
+  --amber-pale: #FFF3E0;
+  --ink: #1A1A1A;
+  --ink-mid: #3D3D3D;
+  --ink-light: #6B6B6B;
+  --rule: #D8D8D8;
+  --bg: #FAFAF7;
+  --card-bg: #FFFFFF;
+  --serif: 'Lora', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── HERO LETTER ── */
+.hero {
+  background: var(--green);
+  color: #fff;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 56px 32px 48px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-from {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+
+.hero-logo-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+}
+
+.hero-logo-text {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+}
+
+.hero-salutation {
+  font-family: var(--serif);
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 6px;
+  font-style: italic;
+}
+
+.hero-names {
+  font-family: var(--serif);
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 32px;
+  line-height: 1.2;
+}
+
+.letter-body {
+  font-family: var(--serif);
+  font-size: 16px;
+  line-height: 1.95;
+  color: rgba(255,255,255,0.88);
+}
+
+.letter-body p {
+  margin-bottom: 22px;
+}
+
+.letter-body p:last-of-type {
+  margin-bottom: 0;
+}
+
+.letter-body strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.letter-body em {
+  color: rgba(255,255,255,0.75);
+}
+
+.letter-sig {
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.letter-sig-close {
+  font-family: var(--serif);
+  font-size: 15px;
+  color: rgba(255,255,255,0.7);
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.letter-sig-name {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.letter-sig-title {
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: .05em;
+}
+
+.hero-shamrock {
+  position: absolute;
+  right: -40px;
+  top: 40px;
+  font-size: 220px;
+  opacity: 0.04;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ── GUIDE WRAPPER ── */
+.guide-wrap {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+}
+
+/* ── GUIDE HEADER ── */
+.guide-header {
+  text-align: center;
+  margin-bottom: 36px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.guide-eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 10px;
+}
+
+.guide-title {
+  font-family: var(--serif);
+  font-size: 34px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.guide-sub {
+  font-size: 14px;
+  color: var(--ink-light);
+  line-height: 1.6;
+  max-width: 540px;
+  margin: 0 auto 20px;
+}
+
+.guide-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.chip {
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--rule);
+  color: var(--ink-light);
+  background: var(--card-bg);
+}
+
+/* ── TABS ── */
+.tabs-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  padding: 12px 0 10px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.tab {
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  cursor: pointer;
+  background: var(--card-bg);
+  color: var(--ink-light);
+  transition: all .15s;
+  white-space: nowrap;
+  font-family: var(--sans);
+}
+
+.tab:hover { border-color: var(--green); color: var(--green); }
+.tab.active { background: var(--green); color: #fff; border-color: var(--green); }
+
+/* ── SECTIONS ── */
+.section { display: none; }
+.section.active { display: block; }
+
+/* ── PROSE BLOCKS ── */
+.prose-block {
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--ink-mid);
+  margin-bottom: 1rem;
+}
+.prose-block strong { color: var(--ink); font-weight: 600; }
+.prose-block em { color: var(--ink-light); }
+
+.pull-quote {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-style: italic;
+  color: var(--green);
+  line-height: 1.6;
+  border-left: 3px solid var(--green);
+  padding: 12px 20px;
+  margin: 28px 0;
+  background: var(--green-pale);
+  border-radius: 0 8px 8px 0;
+}
+
+/* ── STAT ROW ── */
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin: 24px 0;
+}
+
+.stat-box {
+  background: var(--card-bg);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 16px 12px;
+  text-align: center;
+}
+
+.stat-num {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--green);
+  display: block;
+}
+
+.stat-lbl {
+  font-size: 11px;
+  color: var(--ink-light);
+  margin-top: 3px;
+  line-height: 1.4;
+}
+
+/* ── SECTION LABEL ── */
+.sec-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  margin: 28px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* ── ALERT BOXES ── */
+.alert {
+  border-radius: 10px;
+  padding: 14px 18px;
+  font-size: 13.5px;
+  line-height: 1.65;
+  margin: 16px 0;
+}
+.alert strong { font-weight: 600; }
+.alert-green { background: var(--green-pale); color: #1b4332; border-left: 3px solid var(--green); }
+.alert-blue { background: var(--blue-pale); color: #0d3b6e; border-left: 3px solid var(--blue); }
+.alert-amber { background: var(--amber-pale); color: #7c3000; border-left: 3px solid var(--amber); }
+.alert-gold { background: var(--gold-pale); color: #5c4000; border-left: 3px solid var(--gold); }
+
+/* ── CARDS ── */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+}
+
+.card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.num-badge {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+  font-family: var(--sans);
+}
+
+.nb-green { background: var(--green-pale); color: var(--green); }
+.nb-blue { background: var(--blue-pale); color: var(--blue); }
+.nb-teal { background: var(--teal-pale); color: var(--teal); }
+.nb-purple { background: var(--purple-pale); color: var(--purple); }
+.nb-amber { background: var(--amber-pale); color: var(--amber); }
+.nb-coral { background: var(--coral-pale); color: var(--coral); }
+.nb-gold { background: var(--gold-pale); color: var(--gold); }
+
+.card-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 2px;
+  line-height: 1.3;
+}
+
+.card-sub {
+  font-size: 12px;
+  color: var(--ink-light);
+}
+
+.badge {
+  display: inline-block;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  margin: 2px 2px 0 0;
+  font-weight: 500;
+}
+
+.badge-green { background: var(--green-pale); color: var(--green); }
+.badge-blue { background: var(--blue-pale); color: var(--blue); }
+.badge-teal { background: var(--teal-pale); color: var(--teal); }
+.badge-purple { background: var(--purple-pale); color: var(--purple); }
+.badge-amber { background: var(--amber-pale); color: var(--amber); }
+.badge-coral { background: var(--coral-pale); color: var(--coral); }
+.badge-gold { background: var(--gold-pale); color: var(--gold); }
+
+.card-desc {
+  font-size: 13.5px;
+  color: var(--ink-mid);
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.contact-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--ink-mid);
+  margin-top: 4px;
+}
+
+.contact-label {
+  font-weight: 600;
+  color: var(--ink);
+  min-width: 52px;
+  flex-shrink: 0;
+}
+
+/* ── TABLET BOX ── */
+.tablet-box {
+  border: 1.5px solid var(--blue);
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin: 16px 0;
+  background: var(--blue-pale);
+}
+
+.tablet-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+
+.tablet-body {
+  font-size: 13px;
+  color: #0d3b6e;
+  line-height: 1.75;
+}
+
+.tablet-body strong { color: var(--blue); font-weight: 600; }
+
+/* ── SIM GRID ── */
+.sim-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.sim-card {
+  background: var(--card-bg);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.sim-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.sim-price {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--green);
+  margin: 6px 0 4px;
+}
+
+.sim-detail {
+  font-size: 12px;
+  color: var(--ink-light);
+  line-height: 1.6;
+}
+
+/* ── ROUTE TIP ── */
+.route-tip {
+  background: var(--card-bg);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--green);
+  border-radius: 0 10px 10px 0;
+  padding: 12px 16px;
+  font-size: 13px;
+  color: var(--ink-mid);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.route-tip strong { color: var(--ink); font-weight: 600; }
+
+/* ── MAP TIP ── */
+.map-tip {
+  background: var(--green-pale);
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 13px;
+  color: #1b4332;
+  margin-bottom: 20px;
+  line-height: 1.65;
+  border-left: 3px solid var(--green);
+}
+
+/* ── FOOTER ── */
+.footer {
+  background: var(--green);
+  color: rgba(255,255,255,0.6);
+  text-align: center;
+  padding: 28px 24px;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.footer strong { color: #fff; }
+.footer a { color: rgba(255,255,255,0.75); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+  .hero-names { font-size: 28px; }
+  .letter-body { font-size: 15px; }
+  .guide-title { font-size: 26px; }
+  .tabs { padding: 0 12px; }
+  .guide-wrap { padding: 28px 16px 48px; }
+  .hero-inner { padding: 40px 20px 36px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ HERO LETTER ═══ -->
+<div class="hero">
+  <div class="hero-shamrock">☘</div>
+  <div class="hero-inner">
+    <div class="hero-from">
+      <div class="hero-logo-dot"></div>
+      <span class="hero-logo-text">ETA Permits · etapermits.com · A personal note from Philip</span>
+    </div>
+
+    <div class="hero-salutation">Dear</div>
+    <div class="hero-names">Sandra &amp; Ted,</div>
+
+    <div class="letter-body">
+      <p>I wanted to put something together for you that was a little more than a booking confirmation — something you might actually use, enjoy, and perhaps look back on long after you've come home.</p>
+
+      <p>Ireland in September is, in my view, one of the finest things a person can do. The summer crowds have thinned, the light has turned that particular amber that Irish painters have been chasing for centuries, and the whole island seems to exhale. <strong>You've chosen the right month without even knowing it.</strong></p>
+
+      <p>What makes your trip especially special is the family roots. There is something quite profound about standing on Irish soil for the first time when part of you was always there — in a name, a story passed down, a face in an old photograph. Ireland has a way of meeting you halfway on that. People will ask where you're from, and when the conversation turns to family, you'll find they take it seriously. <strong>The Irish have long memories for these things.</strong></p>
+
+      <p>I should also tell you — and this is a lovely coincidence — that you arrive on the 19th of September, which means you'll be in Ireland right in the heart of the <strong>Lisdoonvarna Matchmaking Festival</strong> in County Clare. For the entire month of September, a small village of 800 people on the Wild Atlantic Way transforms into the world's largest singles festival — 165 years old, 60,000 visitors, music and céilí dancing from noon until the small hours every single day. Even if matchmaking isn't on your agenda, go for the evening, have a pint, watch people dance, and let Willie Daly — Ireland's last professional matchmaker — tell you your fortune from his ancient lucky book. <em>You'll talk about it for years.</em></p>
+
+      <p>I've put together a complete guide for your trip — not a tourist brochure, but somewhere between a personal recommendation and a proper companion for the road. It covers the places most visitors never find, the coastlines that make even the Irish go quiet, the pubs where the music has been playing for forty years, the farmstays where breakfast comes from the farm outside your window, and the cathedrals that carry 1,500 years of history in their stones.</p>
+
+      <p>I'd suggest somewhere between ten days and three weeks — it really depends on your pace and how deeply you want to go. Ten days gives you a wonderful taste if time is tight. Two weeks lets you breathe and explore both north and south properly. Three weeks means you can genuinely get lost in it — and getting lost in Ireland is highly recommended. <strong>The guide covers enough for all three, so take what suits you and leave the rest for next time.</strong></p>
+
+      <p>One thing I am certain of — <strong>this will be the experience of a lifetime.</strong> The kind of trip that stays with you long after the suitcases are unpacked. The stories, the landscapes, the music, the people — Ireland has a way of getting under your skin like nowhere else. You'll be dining out on this one for years, sharing it with family and friends, and wondering when you can go back.</p>
+
+      <p><em>Enjoy every single moment of it.</em></p>
+    </div>
+
+    <div class="letter-sig">
+      <div class="letter-sig-close">With warm regards,</div>
+      <div class="letter-sig-name">Philip</div>
+      <div class="letter-sig-title">ETA Permits &nbsp;·&nbsp; etapermits.com</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ GUIDE HEADER ═══ -->
+<div class="access-bar" style="background:#1A1A1A;color:#fff;text-align:center;padding:14px 20px;font-family:Inter,sans-serif;font-size:13px;line-height:1.7;border-bottom:2px solid #1A5C38"><div class="guide-wrap">#127809; <strong style="color:#fff">Sandra &amp; Ted — bookmark this page now.</strong> Open <strong style="color:#8BC34A">etapermits.github.io/sandra-and-ted-a-trip-to-remember</strong> in your tablet or phone browser, then tap <strong>Share → Add to Home Screen</strong> (iPhone/iPad) or <strong>Menu → Add to Home Screen</strong> (Android). It will appear as an app icon on your screen — tap it any time, on or offline, to open your Ireland guide instantly. No app store. No login. Just your guide, always there.</div>
+<div class="guide-wrap">
+  <div class="guide-header">
+    <div class="guide-eyebrow">Your complete travel companion</div>
+    <div class="guide-title">Ireland — Hidden Gems, Culture &amp; the Open Road</div>
+    <div class="guide-sub">30+ numbered locations across the whole island, with farmstays, canal cruising, trad music, cathedrals, food and connectivity — all curated for you by ETA Permits.</div>
+    <div class="guide-chips">
+      <span class="chip">✦ 10 days – 3 weeks recommended</span>
+      <span class="chip">✦ North &amp; South covered</span>
+      <span class="chip">✦ September is perfect</span>
+      <span class="chip">✦ Works on tablet &amp; phone</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ STICKY TABS ═══ -->
+<div class="tabs-wrap">
+  <div class="tabs">
+    <button class="tab active" onclick="show(this,'intro')">☘ Ireland</button>
+    <button class="tab" onclick="show(this,'connect')">📶 Stay Connected</button>
+    <button class="tab" onclick="show(this,'north')">📍 Northern Ireland</button>
+    <button class="tab" onclick="show(this,'south')">📍 Republic</button>
+    <button class="tab" onclick="show(this,'culture')">🎻 Culture</button>
+    <button class="tab" onclick="show(this,'faith')">⛪ Faith</button>
+    <button class="tab" onclick="show(this,'farmstays')">🌿 Farmstays</button>
+    <button class="tab" onclick="show(this,'canals')">⛵ Canals</button>
+    <button class="tab" onclick="show(this,'events')">📅 Events</button>
+    <button class="tab" onclick="show(this,'food')">🍽 Food &amp; Drink</button>
+  </div>
+</div>
+
+<!-- ═══ CONTENT ═══ -->
+<div class="guide-wrap" style="padding-top:0">
+
+<!-- INTRO -->
+<div id="intro" class="section active">
+  <div class="alert alert-gold"><strong>Your trip: 19th September 2026.</strong> You arrive at the peak of the Lisdoonvarna Matchmaking Festival — 165 years old, running all month, the most joyfully Irish thing you'll ever witness. More on this in the Events tab.</div>
+
+  <div class="pull-quote">"Ireland is not a land you visit. It is a land that visits you — long after you have gone home."</div>
+
+  <div class="prose-block">There is a quality to the light in Ireland that painters have tried to capture for centuries and never quite managed. It falls differently here — soft and silver in the west, golden over the midland bogs, diamond-sharp on the northern coast after rain. Perhaps that is why, of all the countries on earth, Ireland produces more poets per head of population than almost any other. <strong>There is simply too much beauty to remain silent about.</strong></div>
+
+  <div class="prose-block">Ireland is <strong>an island of extraordinary contrasts.</strong> In a single day you can stand on sea cliffs three times higher than the Cliffs of Moher with nobody else in sight, eat the finest oysters in Europe in a medieval village, walk through Neolithic monuments older than the pyramids, and end the evening in a pub where the fiddle music started forty years ago and has barely paused since.</div>
+
+  <div class="prose-block">What makes Ireland different from almost every other destination in Europe is that <strong>the beauty is not managed or packaged.</strong> The wild Atlantic still pounds the same cliffs it always has. The bogs of Connaught still smell of peat smoke on a wet afternoon. A farmer will stop his tractor on a narrow road to have a conversation with a stranger, because in Ireland time is not something that is saved — it is spent, freely, on whoever happens to be in front of you.</div>
+
+  <div class="prose-block">The culture runs deeper still. <strong>Irish is the oldest written vernacular language in Europe</strong> — older than French, older than Spanish. Traditional music played on fiddle, uilleann pipes, tin whistle and bodhrán is not a heritage display but a living tradition, performed in pub corners on wet Tuesday evenings by people who learned from their grandparents.</div>
+
+  <div class="prose-block">The island is divided politically — the <strong>Republic of Ireland</strong> in the south, <strong>Northern Ireland</strong> in the north as part of the UK. But in landscape, culture, music and hospitality the border is entirely invisible. This guide covers the whole island, because the island cannot meaningfully be divided. Cross freely and often.</div>
+
+  <div class="prose-block">The Irish have a word — <em>craic</em> (pronounced "crack") — that does not translate into any other language. It means something between fun, conversation, atmosphere and the particular electricity of a room where good things are happening. <strong>"Great craic"</strong> is the highest compliment a night out can receive.</div>
+
+  <div class="stat-row">
+    <div class="stat-box"><span class="stat-num">5,000+</span><span class="stat-lbl">Years of recorded history on this island</span></div>
+    <div class="stat-box"><span class="stat-num">700km</span><span class="stat-lbl">Navigable inland waterways</span></div>
+    <div class="stat-box"><span class="stat-num">2,500km</span><span class="stat-lbl">Wild Atlantic coastline</span></div>
+    <div class="stat-box"><span class="stat-num">4</span><span class="stat-lbl">Nobel Prize winners in literature</span></div>
+    <div class="stat-box"><span class="stat-num">40+</span><span class="stat-lbl">Whiskey distilleries today (was 1 in 2010)</span></div>
+  </div>
+
+  <div class="map-tip"><strong>Using this guide:</strong> Each numbered location on the map matches a numbered stop in this guide. Use the tabs above to explore by category. The guide works on any phone or tablet browser — bookmark it before you travel so it opens instantly on the road.</div>
+</div>
+
+<!-- CONNECT -->
+<div id="connect" class="section">
+  <div class="prose-block"><strong>Staying connected in Ireland matters</strong> — for navigating this guide in real time, finding locations, checking opening hours and booking ahead. Here is everything you need to know before you land.</div>
+
+  <div class="tablet-box">
+    <div class="tablet-title">📱 Getting the most from this guide — tablet recommendation</div>
+    <div class="tablet-body">
+      This guide is designed to be enjoyed on a <strong>tablet with a SIM card slot</strong> — the larger screen makes the map, location cards and cultural sections far more enjoyable than a small phone screen. If you already own a tablet with cellular capability (iPad with Cellular, Samsung Galaxy Tab, or similar), simply insert a local Irish SIM on arrival and you are set.<br><br>
+      <strong>If you don't own a tablet:</strong> This trip is genuinely worth buying one for. A mid-range 4G/5G tablet — such as an iPad (10th generation), Samsung Galaxy Tab A9+, or a refurbished iPad Air — transforms how you experience a guide like this. Entry-level 4G tablets start from around £180–£300. It will serve you on every trip for years to come.<br><br>
+      <strong>Before buying, check two things:</strong> Make sure the tablet is <em>unlocked</em> (not locked to a specific network) and has either a <em>physical SIM card slot</em> or <em>eSIM capability</em>. Wi-Fi-only tablets cannot use a local SIM and will depend entirely on pub and hotel Wi-Fi — much less reliable on the open road.
+    </div>
+  </div>
+
+  <div class="sec-label">Irish SIM cards — what to buy and where</div>
+
+  <div class="alert alert-green"><strong>Good news for Sandra &amp; Ted:</strong> Ireland has excellent mobile coverage across the whole island including rural Donegal, Kerry and the west coast — exactly where this guide takes you. Three, Vodafone and Eir all offer 99%+ 4G and 5G coverage across all tourist destinations. All three networks are essentially identical for a visitor. Pick whichever store is most convenient.</div>
+
+  <div class="prose-block">All three main networks — <strong>Three, Vodafone and Eir</strong> — offer unlimited data prepaid tourist SIMs for around €20 for 28 days. No passport or registration is required to activate one in Ireland. For a 10-day trip one SIM covers the whole stay. For 3 weeks, buy a second at 28 days (€40 total for complete connectivity — exceptional value).</div>
+
+  <div class="sim-grid">
+    <div class="sim-card">
+      <div class="sim-name">Three Ireland</div>
+      <div class="sim-price">€20 / 28 days</div>
+      <div class="sim-detail">Unlimited 5G data + 200 mins + 200 texts. Genuinely uncapped data — best for heavy map and streaming use. Largest network in Ireland (47% market share). Available at Three stores and Dublin Airport.</div>
+    </div>
+    <div class="sim-card">
+      <div class="sim-name">Vodafone Ireland</div>
+      <div class="sim-price">€20–30 / 28 days</div>
+      <div class="sim-detail">Unlimited 5G + unlimited calls &amp; texts. Best rural coverage — recommended if your route includes remote Donegal, Kerry or the west coast. Vodafone kiosk in Dublin Airport Terminal 1 arrivals hall.</div>
+    </div>
+    <div class="sim-card">
+      <div class="sim-name">Eir Ireland</div>
+      <div class="sim-price">€20 / 28 days</div>
+      <div class="sim-detail">Unlimited 5G + unlimited calls &amp; texts. Highest EU roaming allowance — useful if you travel in Europe before or after Ireland. Strong east coast and Munster coverage.</div>
+    </div>
+  </div>
+
+  <div class="sec-label">eSIM — the easiest option if your device supports it</div>
+
+  <div class="prose-block">If your phone or tablet supports eSIM (most devices from 2020 onwards do), you can skip the physical SIM entirely. An eSIM is activated by scanning a QR code — purchase before you fly, scan the code, and <strong>land in Dublin already connected.</strong> Particularly useful for arranging transport from the airport immediately on arrival.</div>
+
+  <div class="sim-grid">
+    <div class="sim-card">
+      <div class="sim-name">Airalo eSIM</div>
+      <div class="sim-price">from $4.50</div>
+      <div class="sim-detail">Data-only (no calls/texts — use WhatsApp for calls). Works on Three, Eir and Vodafone networks. App-based, instant setup. Best for those who want convenience. airalo.com</div>
+    </div>
+    <div class="sim-card">
+      <div class="sim-name">Holafly eSIM</div>
+      <div class="sim-price">from $27 / week</div>
+      <div class="sim-detail">Unlimited data, data-only. Good for heavy users streaming maps or video constantly. Plans from 1 to 90 days. Set up via QR code before departure. esim.holafly.com</div>
+    </div>
+    <div class="sim-card">
+      <div class="sim-name">Local eSIM in-store</div>
+      <div class="sim-price">€20–30</div>
+      <div class="sim-detail">Full plans with calls and texts — same as physical SIM but digital. Available from Vodafone, Three and Eir stores in Ireland. Ask for eSIM when visiting the store on arrival.</div>
+    </div>
+  </div>
+
+  <div class="sec-label">Where to buy on arrival</div>
+  <div class="card">
+    <div class="card-desc"><strong>Dublin Airport:</strong> Vodafone kiosk in Terminal 1 arrivals hall. WHSmith and electronics shops in both terminals sell SIM starter packs. Tip: city centre stores offer slightly better prices and service.</div>
+    <div class="card-desc" style="margin-top:8px"><strong>Dublin city centre:</strong> Vodafone, Three and Eir stores are all on Henry Street, essentially side by side. Staff will set everything up for you — the best option for a first-time buyer.</div>
+    <div class="card-desc" style="margin-top:8px"><strong>Anywhere in Ireland:</strong> Centra and Spar convenience stores nationwide sell SIM starter packs. If you need connectivity quickly in a town or village, most petrol stations will have one.</div>
+    <div class="card-desc" style="margin-top:8px"><strong>For tablets:</strong> Ask for a <em>data SIM</em> and confirm it includes data. Any plan marked "unlimited data" works perfectly in a tablet.</div>
+  </div>
+
+  <div class="alert alert-blue"><strong>Our recommendation for Sandra &amp; Ted:</strong> Buy a <strong>Vodafone</strong> SIM on arrival — best rural coverage for the west coast and Donegal routes in this guide. €20 at any Vodafone store. If your tablet supports eSIM and you want to land already connected, set up <strong>Airalo</strong> before you fly. Either way, €20–40 for complete connectivity across your entire Irish trip is outstanding value.</div>
+</div>
+
+<!-- NORTHERN IRELAND -->
+<div id="north" class="section">
+  <div class="route-tip"><strong>Suggested driving route:</strong> Belfast → Antrim Coast A2 → Kinbane Castle → Murlough Bay → Downhill Beach → Marble Arch Caves (Fermanagh) → Kilbroney Park, Rostrevor → Carlingford border village. Allow 4–5 days.</div>
+  <div class="sec-label">Stops 1–9 · Northern Ireland</div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-blue">1</div><div><div class="card-title">CS Lewis Square, Belfast</div><div class="card-sub"><span class="badge badge-purple">Literary Trail</span><span class="badge badge-blue">Birthplace · Free</span></div></div></div><div class="card-desc">C.S. Lewis, creator of the Chronicles of Narnia, was born in Belfast in 1898. Nine bronze Narnia characters — Aslan, Mr Tumnus, the White Witch — are scattered across East Belfast in a free, open sculpture trail. Quietly extraordinary on a misty morning. His childhood home area is nearby on Dundela Avenue.</div><div class="contact-row"><span class="contact-label">Address</span>402 Newtownards Road, Belfast BT4</div><div class="contact-row"><span class="contact-label">Stay</span>Bullitt Hotel Belfast — +44 28 9590 0600 · hello@bullitthotel.com</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-blue">2</div><div><div class="card-title">Ulster American Folk Park, Omagh</div><div class="card-sub"><span class="badge badge-blue">Museum · Emigration history</span></div></div></div><div class="card-desc">30+ original buildings recreating the Irish emigration story to America with costumed interpreters. One of Europe's finest open-air museums, largely undiscovered by the main tourist trail despite its extraordinary quality. Given your family roots, this one may feel particularly close to the bone.</div><div class="contact-row"><span class="contact-label">Phone</span>+44 28 8224 3292</div><div class="contact-row"><span class="contact-label">Email</span>ulsteramericanfolkpark@nmni.com</div><div class="contact-row"><span class="contact-label">Hours</span>Tue–Sun 10am–5pm</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-blue">3</div><div><div class="card-title">Kinbane Castle, Antrim Coast</div><div class="card-sub"><span class="badge badge-blue">Coastal ruins · 16th century · Free</span></div></div></div><div class="card-desc">142 steps down to ruins perched on a chalk headland above the sea. Views to Rathlin Island and Scotland on a clear day. Barely visited compared to the nearby Giant's Causeway — a stunning and personal experience that rewards the climb.</div><div class="contact-row"><span class="contact-label">Address</span>81 Whitepark Road, Ballycastle BT54</div><div class="contact-row"><span class="contact-label">Stay</span>Causeway Lodge B&amp;B — +44 28 2073 1777</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-blue">4</div><div><div class="card-title">Murlough Bay, Co Antrim</div><div class="card-sub"><span class="badge badge-blue">National Trust · Secret coastal bay</span></div></div></div><div class="card-desc">A small sandy beach ringed by steep hillsides and old ruins — you'll likely have it entirely to yourself. National Trust managed. Narrow road access, no facilities. Allow 3 hours and go on a clear day.</div><div class="contact-row"><span class="contact-label">Access</span>Near Ballycastle, Co Antrim · Free · National Trust managed</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-blue">5</div><div><div class="card-title">Downhill Beach &amp; Mussenden Temple, Derry</div><div class="card-sub"><span class="badge badge-blue">Wild beach · Clifftop rotunda</span></div></div></div><div class="card-desc">A vast Atlantic strand backed by cliffs, with an 18th century rotunda perched right at the cliff edge. Used as a filming location in Game of Thrones. The combination of beach, cliff and folly is utterly unique in Ireland.</div><div class="contact-row"><span class="contact-label">Stay</span>Portrush Atlantic Hotel — +44 28 7082 2361 · reservations@portrushatlantic.com</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-blue">6</div><div><div class="card-title">Marble Arch Caves, Co Fermanagh</div><div class="card-sub"><span class="badge badge-blue">UNESCO Geopark · Underground boat trip</span></div></div></div><div class="card-desc">Longest cave system in Northern Ireland with an optional underground boat trip. Three rivers flow through limestone formations. Atmospheric and far less crowded than its quality warrants. Book ahead in summer.</div><div class="contact-row"><span class="contact-label">Phone</span>+44 28 6632 1815</div><div class="contact-row"><span class="contact-label">Email</span>marblearchcaves@fermanaghandlakelands.gov.uk</div><div class="contact-row"><span class="contact-label">Hours</span>Daily 9am–5pm</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-blue">7</div><div><div class="card-title">Devenish Island, Co Fermanagh</div><div class="card-sub"><span class="badge badge-blue">Monastic island · Water taxi only</span></div></div></div><div class="card-desc">Early Christian monastic ruins including a perfectly intact round tower, accessible only by water taxi from Enniskillen. Surrounded by the tranquil waters of Lower Lough Erne. Magical and rarely visited.</div><div class="contact-row"><span class="contact-label">Access</span>Erne Water Taxi — book in advance from Enniskillen</div><div class="contact-row"><span class="contact-label">Stay</span>Lough Erne Resort — +44 28 6632 3230</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-blue">8</div><div><div class="card-title">Kilbroney Park &amp; Narnia Trail, Rostrevor</div><div class="card-sub"><span class="badge badge-blue">Forest park · Literary · Red squirrels</span></div></div></div><div class="card-desc">C.S. Lewis drew on the Mourne Mountains visible from here when creating Narnia. Dedicated Narnia walking trail, red squirrels, café. Visitors regularly describe the landscape as "otherworldly." £5 per car.</div><div class="contact-row"><span class="contact-label">Phone</span>+44 330 137 4046 · Daily 9am–9pm · £5 per car</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-blue">9</div><div><div class="card-title">Carlingford, Co Louth (border village)</div><div class="card-sub"><span class="badge badge-blue">Medieval · Oysters · E-bike trail</span></div></div></div><div class="card-desc">A perfectly preserved medieval border village. King John's Castle, cobbled streets, and the finest oysters at PJ O'Hare's pub. The Carlingford Greenway e-bike trail along the lough shore is unmissable.</div><div class="contact-row"><span class="contact-label">Stay</span>Four Seasons Hotel — +353 42 937 3530 · info@fourseasonsCarlignford.ie</div></div>
+</div>
+
+<!-- REPUBLIC -->
+<div id="south" class="section">
+  <div class="route-tip"><strong>Suggested driving route:</strong> Dublin → Kilmore Quay (Wexford) → Dungarvan → Beara Peninsula → Black Valley (Kerry) → Bromore Cliffs → Lisdoonvarna → Kylemore Abbey (Connemara) → Achill Island (Mayo) → Slieve League → Grianan of Aileach → Murder Hole Beach (Donegal). Allow 10–14 days.</div>
+  <div class="sec-label">Stops 10–22 · Republic of Ireland</div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-green">10</div><div><div class="card-title">Kilmore Quay, Co Wexford</div><div class="card-sub"><span class="badge badge-green">Thatched fishing village · Seabird islands</span></div></div></div><div class="card-desc">A village that looks virtually unchanged since the 1950s. Boats go out to the Saltee Islands seabird sanctuary — puffins, gannets, grey seals. Hosts Ireland's oldest seafood festival each July (41st year).</div><div class="contact-row"><span class="contact-label">Stay</span>Quay House B&amp;B — +353 53 912 9988</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-green">11</div><div><div class="card-title">Dungarvan, Co Waterford</div><div class="card-sub"><span class="badge badge-green">Ireland's artisan food capital</span></div></div></div><div class="card-desc">Ireland's undisputed food capital outside Dublin. Extraordinary concentration of cheesemakers, smokeries and craft brewers. Home of the EU-protected Waterford Blaa. The Tannery restaurant is unmissable. Waterford Festival of Food each April.</div><div class="contact-row"><span class="contact-label">Tannery</span>+353 58 45420 · info@tannery.ie</div><div class="contact-row"><span class="contact-label">Stay</span>Tannery Townhouse — +353 58 45420</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-green">12</div><div><div class="card-title">Beara Peninsula, Cork/Kerry</div><div class="card-sub"><span class="badge badge-green">Ring of Beara · Cable car to Dursey Island</span></div></div></div><div class="card-desc">More beautiful than the Ring of Kerry with a fraction of the visitors. Ancient settlements from 3,000 BC, two mountain ranges, cable car to remote Dursey Island. Allow a full day minimum.</div><div class="contact-row"><span class="contact-label">Stay</span>Beara Coast Hotel, Castletownbere — +353 27 71446 · info@bearacoast.com</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-green">13</div><div><div class="card-title">The Black Valley, Co Kerry</div><div class="card-sub"><span class="badge badge-green">Last electrified 1979 · Utterly remote</span></div></div></div><div class="card-desc">The last place in Ireland to receive electricity (1979) and telephone. Tucked between mountain passes in MacGillycuddy's Reeks. Spectacular scenery, sheep on the road and almost no other visitors. A genuine hidden jewel.</div><div class="contact-row"><span class="contact-label">Stay</span>Black Valley Hostel (rustic, authentic) — +353 64 663 4712</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-green">14</div><div><div class="card-title">Bromore Cliffs, Ballybunion, Kerry</div><div class="card-sub"><span class="badge badge-green">Secret cliffs · No crowds · €5</span></div></div></div><div class="card-desc">The Cliffs of Moher without the crowds — caves, sea stacks, waterfalls, nesting birds, WWII lookout post. Mike the landowner often gives informal guided commentary. Daily 10am–7pm, €5 car park.</div><div class="contact-row"><span class="contact-label">Phone</span>+353 87 950 2167</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-green">15</div><div><div class="card-title">Lisdoonvarna, Co Clare</div><div class="card-sub"><span class="badge badge-green">Matchmaking Festival · Victorian spa village · September</span></div></div></div><div class="card-desc">You will be here at the perfect time — this is the heart of the Lisdoonvarna Matchmaking Festival (all of September). Europe's largest matchmaking event, 165 years old, 60,000 visitors. Every pub bursting with trad music and céilí dancing from noon until the small hours. Willie Daly, Ireland's last professional matchmaker, holds court at the Matchmaker Bar. Touch his ancient lucky book with both hands — legend says you'll be married within six months.</div><div class="contact-row"><span class="contact-label">Stay</span>Hydro Hotel — +353 65 707 4005 · hydro@iol.ie</div><div class="contact-row"><span class="contact-label">Festival</span>matchmakerireland.com · All of September</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-green">16</div><div><div class="card-title">Kylemore Abbey, Connemara</div><div class="card-sub"><span class="badge badge-green">Victorian abbey · Walled garden · Tragic history</span></div></div></div><div class="card-desc">A Victorian castle converted to a Benedictine abbey after a tragic family story — the owner's wife died of fever on site, a daughter drowned in the lake, and the castle was built as a testament of love. The Victorian walled garden, Gothic chapel and mountain backdrop make it one of Ireland's most atmospheric spots.</div><div class="contact-row"><span class="contact-label">Phone</span>+353 95 52001 · info@kylemoreabbey.com · Daily 10am–6pm</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-green">17</div><div><div class="card-title">Achill Island, Co Mayo</div><div class="card-sub"><span class="badge badge-green">Keem Bay · Atlantic Drive · Bridge access</span></div></div></div><div class="card-desc">Keem Bay — a hidden horseshoe of turquoise water nestled between mountains — and the 12km Atlantic Drive around dramatic cliffs are among the finest sights in the country. Bridge-connected. Vastly undervisited despite its extraordinary beauty.</div><div class="contact-row"><span class="contact-label">Stay</span>Achill Cliff House Hotel — +353 98 43400 · info@achillcliff.com</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-green">18</div><div><div class="card-title">Slieve League Cliffs, Co Donegal</div><div class="card-sub"><span class="badge badge-green">Highest sea cliffs in Europe · 3× Cliffs of Moher</span></div></div></div><div class="card-desc">Nearly three times higher than the Cliffs of Moher — almost 2,000 feet — yet a fraction of the crowds. One Man's Path ridge walk is one of the finest in Europe. Shuttle bus from visitor centre. Genuinely awe-inspiring.</div><div class="contact-row"><span class="contact-label">Phone</span>+353 74 973 9077 · info@sliabhliag.com · Daily 9am–6pm</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-green">19</div><div><div class="card-title">Grianan of Aileach, Co Donegal</div><div class="card-sub"><span class="badge badge-green">Neolithic ring fort · 3-county views · Free</span></div></div></div><div class="card-desc">Stone ring fort on a hilltop with 360-degree views of Donegal, Derry and Tyrone. Neolithic origins, Iron Age remains, connections to St Patrick. Considered Donegal's equivalent of the Hill of Tara. Rarely visited.</div><div class="contact-row"><span class="contact-label">Stay</span>Castle Grove Country House, Letterkenny — +353 74 915 1118 · info@castlegrove.com</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-green">20</div><div><div class="card-title">Murder Hole Beach (Boyeeghter Bay), Donegal</div><div class="card-sub"><span class="badge badge-green">Ireland's most secret beach · Natural arch cave</span></div></div></div><div class="card-desc">A 20-minute walk through countryside rewards you with a secluded arc of perfect white sand and a natural arch cave accessible at low tide. €5 digital parking. Not safe for swimming but breathtaking for photography and exploration.</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-green">21</div><div><div class="card-title">Lough Key Forest Park, Co Roscommon</div><div class="card-sub"><span class="badge badge-green">30+ lake islands · Canopy walk</span></div></div></div><div class="card-desc">30+ lake islands, tree canopy walk, underground tunnel, castle island and Iron Age ruins. Near Carrick-on-Shannon canal marina — combine with a waterway cruise (see Canals tab).</div><div class="contact-row"><span class="contact-label">Phone</span>+353 71 967 3122 · loughkey@coillte.ie</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-green">22</div><div><div class="card-title">Mustard Seed at Echo Lodge, Co Limerick</div><div class="card-sub"><span class="badge badge-green">Kitchen garden restaurant · Hidden gem</span></div></div></div><div class="card-desc">A Victorian country house where the kitchen garden feeds the award-winning restaurant. Everything sourced from the locality. One of Ireland's most beloved hidden dining experiences. Book well in advance.</div><div class="contact-row"><span class="contact-label">Phone</span>+353 69 68508 · mustard@indigo.ie · mustardseed.ie</div></div>
+</div>
+
+<!-- CULTURE -->
+<div id="culture" class="section">
+  <div class="prose-block"><strong>Traditional Irish music is not a performance. It is a conversation.</strong> Musicians gather in pub corners, play for each other and for whoever is listening. No stage, no microphone. You walk in and the music is simply there — fiddle, uilleann pipes, flute, tin whistle, bodhrán. The céilí (pronounced "kay-lee") is Ireland's communal dance — jigs and reels in groups, led by a caller. No experience needed. No partner necessary. You will be swept up.</div>
+
+  <div class="sec-label">Authentic trad music sessions</div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-teal">T1</div><div><div class="card-title">The Cobblestone, Smithfield, Dublin</div><div class="card-sub"><span class="badge badge-teal">Weekend sessions · No stage · No microphones</span></div></div></div><div class="card-desc">One of Dublin's most respected trad venues — a wonderfully beaten-up bar with heaps of personality. Led by renowned uilleann piper Néillidh Mulligan at weekends. Standing room only once the music starts. A mix of locals and visitors hushed by the beauty of the playing. The real thing.</div><div class="contact-row"><span class="contact-label">Address</span>77 King Street North, Smithfield, Dublin 7</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-teal">T2</div><div><div class="card-title">The Crane Bar, Galway</div><div class="card-sub"><span class="badge badge-teal">West Ireland sessions · Dancing welcome</span></div></div></div><div class="card-desc">One of the finest trad venues in the west. Sessions are about the music, not the ego. Room to dance — not unusual for people to take to the floor for Irish set dancing. Welcoming to all.</div><div class="contact-row"><span class="contact-label">Address</span>2 Sea Road, Galway City</div><div class="contact-row"><span class="contact-label">Phone</span>+353 91 587 419</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-teal">T3</div><div><div class="card-title">De Barra's Folk Club, Clonakilty, Cork</div><div class="card-sub"><span class="badge badge-teal">40+ year institution · World reputation</span></div></div></div><div class="card-desc">Christy Moore once said: "There's Carnegie Hall, the Royal Albert, Sydney Opera House and then there's De Barra's." Walls decorated with instruments, intimate atmosphere, international reputation. One of Ireland's most authentic music venues.</div><div class="contact-row"><span class="contact-label">Phone</span>+353 23 883 3381 · 55 Pearse Street, Clonakilty</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-teal">T4</div><div><div class="card-title">Willie Clancy Summer School, Miltown Malbay, Clare</div><div class="card-sub"><span class="badge badge-teal">Early July · World's greatest trad gathering</span></div></div></div><div class="card-desc">The most important traditional music event in the world. Every July, Miltown Malbay fills with hundreds of the finest trad musicians for workshops, sessions, céilís and lectures. Music comes from every direction at all hours. If you are anywhere near Clare in July, unmissable.</div><div class="contact-row"><span class="contact-label">When</span>Early July · scoilsamhraidhwillieclancy.com</div></div>
+
+  <div class="sec-label">Céilí dancing — where to join in</div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-teal">D1</div><div><div class="card-title">Galway Céilí Club</div><div class="card-sub"><span class="badge badge-teal">Mondays &amp; Tuesdays · Beginners very welcome · €15</span></div></div></div><div class="card-desc">Weekly céilí sessions at Kennedy's Bar (Mondays) and Fibber Magees (Tuesdays) on Eyre Square. €15 per session. No dancing experience needed — the moves are called and demonstrated as you go. Locals and visitors together. Great fun.</div><div class="contact-row"><span class="contact-label">Address</span>47 Eyre Square, Galway · 7:30–9:30pm</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-teal">D2</div><div><div class="card-title">Darkey Kelly's, Temple Bar, Dublin</div><div class="card-sub"><span class="badge badge-teal">Saturday céilí · Live trad every night</span></div></div></div><div class="card-desc">A pub on the site where Handel's Messiah was first performed in 1742. The Saturday céilí is a beloved Dublin institution — arrive early as this atmospheric venue fills fast. Live trad music every evening.</div><div class="contact-row"><span class="contact-label">Address</span>19 Fishamble Street, Temple Bar, Dublin 8</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-teal">D3</div><div><div class="card-title">Lisdoonvarna Matchmaking Festival — September</div><div class="card-sub"><span class="badge badge-teal">Céilí every night in every pub · All of September</span></div></div></div><div class="card-desc">Sandra and Ted — you will be here at the perfect time. Every pub in Lisdoonvarna becomes a dance hall for the entire month of September. Céilí and set dancing every evening with live bands. Complete beginners are swept up and taught by the crowd. The largest communal dancing experience in Ireland.</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-teal">D4</div><div><div class="card-title">Trad on the Prom, Galway</div><div class="card-sub"><span class="badge badge-teal">Professional show · Summer through October</span></div></div></div><div class="card-desc">For those who prefer to watch world-class Irish step dancing in a theatre setting. One of Ireland's finest Irish dance and music shows. Spectacular footwork, costumes and musicianship in one extraordinary evening.</div><div class="contact-row"><span class="contact-label">Venue</span>Leisureland Theatre, Salthill, Galway · +353 91 585 036 · tradprom.com</div></div>
+
+  <div class="sec-label">Irish language — Gaeltacht regions</div>
+  <div class="card"><div class="card-head"><div class="num-badge nb-teal">L1</div><div><div class="card-title">The Gaeltacht — where Irish is still spoken daily</div><div class="card-sub"><span class="badge badge-teal">Connemara · West Donegal · Dingle Peninsula</span></div></div></div><div class="card-desc">Irish (Gaeilge) — the oldest written vernacular language in Europe — is still spoken as a first language in Gaeltacht regions. In these areas you will hear it naturally in shops, pubs and on the street. Oideas Gael in Gleann Cholm Cille, Donegal offers immersive Irish language and culture holidays including music, dance and guided walks in one of Ireland's most beautiful landscapes.</div><div class="contact-row"><span class="contact-label">Oideas Gael</span>+353 74 973 0248 · eolas@oideas-gael.com</div></div>
+</div>
+
+<!-- FAITH -->
+<div id="faith" class="section">
+  <div class="prose-block">Ireland's sacred architecture spans 5,000 years — from Neolithic passage tombs aligned with the winter solstice, to round towers built by early Christian monks, to Gothic cathedrals that took generations to complete. Holy wells, pilgrimage mountains and ancient monastic islands dot the landscape, many still actively visited by pilgrims today. Even the ruin of a medieval abbey on a misty morning carries a weight of silence that is unlike anything else in Europe.</div>
+
+  <div class="sec-label">Sacred sites &amp; cathedrals — 7 essential places</div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-purple">C1</div><div><div class="card-title">St Patrick's Cathedral, Dublin</div><div class="card-sub"><span class="badge badge-purple">Founded 1191 · Largest church in Ireland</span></div></div></div><div class="card-desc">Ireland's largest church, on the site where St Patrick himself is said to have baptised converts over a holy well. Jonathan Swift — author of Gulliver's Travels — served as Dean here from 1713–1745 and is buried within. Stunning medieval architecture and beautiful stained glass in the heart of Dublin.</div><div class="contact-row"><span class="contact-label">Address</span>St Patrick's Close, Dublin 8</div><div class="contact-row"><span class="contact-label">Phone</span>+353 1 453 9472 · info@stpatrickscathedral.ie</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-purple">C2</div><div><div class="card-title">Christ Church Cathedral, Dublin</div><div class="card-sub"><span class="badge badge-purple">Originally Viking · Founded 1030</span></div></div></div><div class="card-desc">Dublin's oldest cathedral — originally built by the Vikings in 1030, making it older than most European cathedrals. The crypt is the largest medieval crypt in Ireland and Britain. Just 400 metres from St Patrick's — visit both in half a day. The medieval stonework is outstanding.</div><div class="contact-row"><span class="contact-label">Phone</span>+353 1 677 8099 · info@christchurchcathedral.ie</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-purple">C3</div><div><div class="card-title">Rock of Cashel, Co Tipperary</div><div class="card-sub"><span class="badge badge-purple">4th century · Brian Boru crowned here · Romanesque frescoes</span></div></div></div><div class="card-desc">One of the most spectacular archaeological sites in Europe. A cluster of medieval buildings — round tower, high cross, Romanesque chapel and Gothic cathedral — perched on a limestone outcrop above the Tipperary plain. Cormac's Chapel (1134) contains the only surviving Romanesque frescoes in Ireland. Brian Boru was crowned here in 977. Utterly unmissable.</div><div class="contact-row"><span class="contact-label">Phone</span>+353 62 61437 · heritageireland.ie · Open daily</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-purple">C4</div><div><div class="card-title">St Colman's Cathedral, Cobh, Cork</div><div class="card-sub"><span class="badge badge-purple">Neo-Gothic · Faces the ocean · Titanic connection</span></div></div></div><div class="card-desc">Cobh's magnificent neo-Gothic cathedral dominates the harbour skyline — visible from the sea for miles, took 47 years to complete. Cobh was the last port of call of the Titanic in 1912 and a major departure point for Irish emigrants during the Famine. The Queenstown Story museum tells this emigration history powerfully.</div><div class="contact-row"><span class="contact-label">Phone</span>+353 21 481 3222</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-purple">C5</div><div><div class="card-title">Down Cathedral, Downpatrick, Northern Ireland</div><div class="card-sub"><span class="badge badge-purple">Burial place of St Patrick</span></div></div></div><div class="card-desc">Said to be the burial place of St Patrick, patron saint of Ireland. A large granite stone marks the grave in the churchyard. The cathedral dates back to Benedictine monks in 1183 — beautiful, serene and a deeply moving place given your connection to Irish roots.</div><div class="contact-row"><span class="contact-label">Phone</span>+44 28 4461 4922 · info@downcathedral.org</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-purple">C6</div><div><div class="card-title">Glendalough, Co Wicklow</div><div class="card-sub"><span class="badge badge-purple">6th century monastic city · Two lakes · 1hr from Dublin</span></div></div></div><div class="card-desc">A 6th century monastic city in a glacial valley between two lakes, founded by St Kevin. Round tower, ruined cathedral, stone churches — all in extraordinary condition. The forested valley and misty water are spectacular regardless of the history. One hour from Dublin — a perfect first or last day stop.</div><div class="contact-row"><span class="contact-label">Phone</span>+353 404 45352</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-purple">C7</div><div><div class="card-title">Skellig Michael, Co Kerry</div><div class="card-sub"><span class="badge badge-purple">UNESCO World Heritage · 6th century · Star Wars filmed here</span></div></div></div><div class="card-desc">A monastery carved into an Atlantic rock crag 12km from the Kerry coast, built by early Christian monks in the 6th century. 600 steps to the summit where beehive cells and stone crosses survive intact. One of the most extraordinary places in the world. Book boat trips months ahead — highly weather dependent.</div><div class="contact-row"><span class="contact-label">Access</span>Seasonal boats from Portmagee, Kerry · skelligislandtours.com</div></div>
+</div>
+
+<!-- FARMSTAYS -->
+<div id="farmstays" class="section">
+  <div class="alert alert-green"><strong>All six farmstays below are genuine working farms</strong> — not just rural B&amp;Bs. Each has been selected for quality of accommodation, food provenance, and authentic farm experience. All are high standard.</div>
+  <div class="sec-label">FS1–FS6 · High-standard working farmstays</div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-amber">FS1</div><div><div class="card-title">Ballymaloe House, East Cork</div><div class="card-sub"><span class="badge badge-amber">Birthplace of modern Irish cuisine · 300 acres</span></div></div></div><div class="card-desc">The most celebrated farmstay in Ireland, on a 300-acre working farm. Founded by Myrtle Allen in 1964. Dinner menus change daily with what the walled garden and farm produce. Adjacent Ballymaloe Cookery School offers half-day to week-long courses. Trad music Thursday and Saturday evenings. Small Luxury Hotels of the World member.</div><div class="contact-row"><span class="contact-label">Phone</span>+353 21 465 2531</div><div class="contact-row"><span class="contact-label">Email</span>res@ballymaloe.ie · ballymaloe.ie</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-amber">FS2</div><div><div class="card-title">Longueville House, Mallow, Cork</div><div class="card-sub"><span class="badge badge-amber">Georgian estate · Own cider &amp; apple brandy</span></div></div></div><div class="card-desc">Georgian mansion on 500 acres. Chef sources everything from the estate's own river, farm and walled garden. Produces outstanding estate cider and apple brandy aged in French oak. Salmon fishing on the Blackwater. Legendary breakfasts.</div><div class="contact-row"><span class="contact-label">Phone</span>+353 22 47156 · longuevillebeverages@gmail.com</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-amber">FS3</div><div><div class="card-title">Killiane Castle Farm, Co Wexford</div><div class="card-sub"><span class="badge badge-amber">15th century castle · Dungeon · Working farm</span></div></div></div><div class="card-desc">A real castle farmstay with a functioning dungeon that delights guests. Free-range hens supply extraordinary breakfasts. Tennis, croquet and pitch-and-putt on the castle grounds. One of Ireland's most atmospheric farmstay experiences.</div><div class="contact-row"><span class="contact-label">Phone</span>+353 53 915 8885 · info@killianecastle.com</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-amber">FS4</div><div><div class="card-title">Rock Farm Slane, Co Meath</div><div class="card-sub"><span class="badge badge-amber">Eco glamping · Slane Castle estate · River Boyne</span></div></div></div><div class="card-desc">Luxury yurts and shepherd's huts on the Slane Castle estate. Hot tub, sauna, natural swimming pool, kayaking on the Boyne. Organic farm shop. Straw-bale ecolodge built from the farm's own barley. One of Ireland's most distinctive stays.</div><div class="contact-row"><span class="contact-label">Phone</span>+353 41 988 4861 · info@rockfarmslane.ie · rockfarmslane.ie</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-amber">FS5</div><div><div class="card-title">Ireland West Farm Stay, Co Mayo</div><div class="card-sub"><span class="badge badge-amber">Peat cutting · Blacksmithing · 5-star rated</span></div></div></div><div class="card-desc">Farmer and heritage expert Eddie Dooney guides you through peat cutting, blacksmithing, cheese tasting and Irish folklore by the fire. 5-star rated by every single visitor. A deeply personal and authentic experience of the real Ireland — the kind of evening you'll describe to grandchildren.</div><div class="contact-row"><span class="contact-label">Phone</span>+353 86 058 5858 · irelandwestfarmstay@gmail.com</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-amber">FS6</div><div><div class="card-title">Ballylagan Organic Farm, Co Antrim</div><div class="card-sub"><span class="badge badge-amber">100% organic · Prince Charles opened the farm shop</span></div></div></div><div class="card-desc">Northern Ireland's original 100% certified organic farm, opened by HRH Prince Charles. Four luxury bedrooms named after farm wildlife (Lapwing, Brown Trout, Heron, Irish Hare). Wood-burning stoves lit before arrival. 100% organic breakfasts. Just 14 miles from Belfast.</div><div class="contact-row"><span class="contact-label">Phone</span>+44 28 9332 2129 · info@ballylagan.com · ballylagan.com</div></div>
+</div>
+
+<!-- CANALS -->
+<div id="canals" class="section">
+  <div class="alert alert-green"><strong>No boat licence required anywhere in Ireland.</strong> No prior boating experience needed — full tuition is given at every marina before you set off. The Shannon-Erne Waterway connects the Republic to Northern Ireland, letting you cruise across an international border from the same boat.</div>
+  <div class="sec-label">CW1–CW3 · Canal &amp; waterway operators</div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-teal">CW1</div><div><div class="card-title">Emerald Star / Le Boat — Shannon &amp; Erne</div><div class="card-sub"><span class="badge badge-teal">Premium fleet · 2–12 berth · March–October</span></div></div></div><div class="card-desc">Europe's largest canal boat operator. Luxury and standard boats from 2 to 12 berths on the Shannon-Erne Waterway. Golf packages on six championship courses along the route. On-call technical support throughout. Full tuition included. Fishing on the Shannon is free — pike, perch, roach and bream.</div><div class="contact-row"><span class="contact-label">Phone</span>+353 71 962 7633</div><div class="contact-row"><span class="contact-label">Email</span>ireland@leboat.com · emeraldstar.ie</div><div class="contact-row"><span class="contact-label">Cost</span>From approx. €700/week for 2-berth in low season</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-teal">CW2</div><div><div class="card-title">Carrickcraft — Shannon &amp; Erne Specialist</div><div class="card-sub"><span class="badge badge-teal">50 years experience · 3 marinas · One-way cruises</span></div></div></div><div class="card-desc">Three marinas: Carrick-on-Shannon, Banagher and Bellanaleck (Lough Erne). Unique one-way cruise option — start at one marina, finish at another, covering the entire waterway in a week. Sustainable HVO fuel fleet. Boats 2–10 berth.</div><div class="contact-row"><span class="contact-label">Phone</span>+353 1 278 1666</div><div class="contact-row"><span class="contact-label">Email</span>sales@carrickcraft.com · carrickcraft.com</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-teal">CW3</div><div><div class="card-title">Manor House Marine — Lough Erne, Fermanagh</div><div class="card-sub"><span class="badge badge-teal">Largely lock-free · Northern Ireland · Wildlife islands</span></div></div></div><div class="card-desc">Based on Lower Lough Erne — largely lock-free cruising, the most relaxed waterway experience in Ireland. Easy access to Devenish Island (Stop 7), Castle Caldwell bird sanctuary and the remote islands of Upper Lough Erne.</div><div class="contact-row"><span class="contact-label">Phone</span>+44 28 6862 2200 · info@manormarine.com · manormarine.com</div></div>
+</div>
+
+<!-- EVENTS -->
+<div id="events" class="section">
+  <div class="alert alert-gold"><strong>Sandra &amp; Ted — September is an exceptional month for events.</strong> You arrive on the 19th, right in the heart of the Lisdoonvarna Festival. Heritage Week runs mid-August into early September. The whole island is alive.</div>
+  <div class="sec-label">E1–E7 · Unusual annual events</div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-coral">E1</div><div><div class="card-title">Waterford Festival of Food, Dungarvan</div><div class="card-sub"><span class="badge badge-coral">April · 3 days · Ireland's largest community food festival</span></div></div></div><div class="card-desc">Pop-up dining in unexpected locations, foraging walks, farm tours, cooking demos and the famous Sunday outdoor market in Dungarvan's Market Square. Warm and local — nothing corporate about it. waterfordfestivaloffood.com</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-coral">E2</div><div><div class="card-title">Tedfest, Inis Mór, Aran Islands</div><div class="card-sub"><span class="badge badge-coral">February · 4 days · Father Ted fan festival</span></div></div></div><div class="card-desc">Fan festival for the cult Irish TV comedy held on the wild Aran Islands. Events include the Lovely Girls Competition, Priests v Nuns Beach Volleyball and the Jesuit Country &amp; Western Hour. Bizarre, brilliant, unmissably Irish. tedfest.org</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-coral">E3</div><div><div class="card-title">Lisdoonvarna Matchmaking Festival, Co Clare</div><div class="card-sub"><span class="badge badge-coral">All of September · 165 years old · Sandra &amp; Ted will be here!</span></div></div></div><div class="card-desc">You arrive right in the middle of this. The world's largest singles festival transforms a small Clare village for the entire month. Every pub bursting with trad music and céilí dancing from noon until the small hours. Willie Daly, Ireland's last professional matchmaker, holds court at the Matchmaker Bar. Touch his ancient lucky book with both hands — legend says you'll be married within six months. 60,000 visitors from all over the world, aged 18 to 80. An absolutely unmissable evening.</div><div class="contact-row"><span class="contact-label">Website</span>matchmakerireland.com · Free entry to most events</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-coral">E4</div><div><div class="card-title">Féile an Phobail, West Belfast</div><div class="card-sub"><span class="badge badge-coral">August · 2 weeks · Ireland's biggest community arts festival</span></div></div></div><div class="card-desc">Transforms West Belfast with trad trails, comedy, theatre, tours, debates and major headline acts. One of the most authentic cultural experiences in the north. feilebelfast.com</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-coral">E5</div><div><div class="card-title">Kinvara Hooker Festival, Co Galway</div><div class="card-sub"><span class="badge badge-coral">Summer · Traditional sailing</span></div></div></div><div class="card-desc">A festival celebrating the iconic black-sailed Galway hooker sailing boats in their home harbour village. Small, local, deeply traditional and completely delightful. kinvara.com</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-coral">E6</div><div><div class="card-title">Kilmore Quay Seafood Festival, Co Wexford</div><div class="card-sub"><span class="badge badge-coral">July · 41st year · Ireland's oldest seafood festival</span></div></div></div><div class="card-desc">The boats that supply the lobster and crab dock right in the thatched village. 41 years of live music, fresh seafood and real Irish craic in a genuinely unspoiled setting.</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-coral">E7</div><div><div class="card-title">Heritage Week, Nationwide</div><div class="card-sub"><span class="badge badge-coral">Mid-August · 1 week · Most events completely free</span></div></div></div><div class="card-desc">Every community in Ireland opens its doors — local history tours, open houses, craft demos in places usually closed to the public. An extraordinary window into authentic local Ireland. heritageweek.ie</div></div>
+</div>
+
+<!-- FOOD -->
+<div id="food" class="section">
+  <div class="prose-block">These are the foods and drinks that define Ireland — some protected by EU law, others simply legendary. Part of what makes an Irish trip memorable is the food. Seek these out wherever you find them.</div>
+  <div class="sec-label">F1–F7 · Irish food &amp; drink specialities</div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-coral">F1</div><div><div class="card-title">Waterford Blaa</div><div class="card-sub"><span class="badge badge-coral">EU Protected · Same status as Champagne</span></div></div></div><div class="card-desc">A doughy, floury bread roll unique to Waterford — so protected it has EU PGI status like Champagne. Only four licensed bakeries in the world can make them. Eaten for breakfast filled with butter and rashers. Try Hickey's Bakery or Walsh's in Waterford city.</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-coral">F2</div><div><div class="card-title">Carlingford Oysters, Co Louth</div><div class="card-sub"><span class="badge badge-coral">Cold lough waters · Among the finest in Europe</span></div></div></div><div class="card-desc">Grown in the cold, clean tidal waters of Carlingford Lough. Among the finest oysters in Europe. Try them at PJ O'Hare's pub in Carlingford village (Stop 9) with a pint of stout. A perfect combination.</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-coral">F3</div><div><div class="card-title">Connemara Lamb, Co Galway</div><div class="card-sub"><span class="badge badge-coral">EU Protected · Mountain-reared on heather &amp; wild herbs</span></div></div></div><div class="card-desc">Mountain-reared on wild Connemara bogland. The flavour — from foraging on heather, wild herbs and saltgrass — is unmistakable. EU PGI. Try at Ballynahinch Castle Hotel restaurant near Recess, Connemara.</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-coral">F4</div><div><div class="card-title">Burren Artisan Produce, Co Clare</div><div class="card-sub"><span class="badge badge-coral">St Tola goat's cheese · Burren Smokehouse salmon</span></div></div></div><div class="card-desc">The Burren's unique limestone landscape produces extraordinary food. St Tola goat's cheese (one of Europe's finest), Burren Smokehouse salmon, and wild garlic gathered from the limestone pavements. The Burren Slow Food Festival includes a four-course banquet sourced entirely locally.</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-coral">F5</div><div><div class="card-title">Longueville House Cider &amp; Apple Brandy</div><div class="card-sub"><span class="badge badge-coral">Estate-produced · French oak aged · Extraordinary</span></div></div></div><div class="card-desc">Produced from the Longueville estate's own orchards (Farmstay FS2). The apple brandy is aged in French oak casks and is quite extraordinary for an Irish product. Available to buy directly from the estate — a wonderful gift to bring home.</div><div class="contact-row"><span class="contact-label">Phone</span>+353 22 47156 · longuevillebeverages@gmail.com</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-coral">F6</div><div><div class="card-title">The Perfect Pint of Guinness</div><div class="card-sub"><span class="badge badge-coral">119.5 seconds · Best in Dublin</span></div></div></div><div class="card-desc">A properly poured pint takes exactly 119.5 seconds and the difference is very noticeable. The best pints in Dublin are at Neary's on Chatham Street or Mulligan's on Poolbeg Street — widely regarded as the finest in the capital. Do not rush the pour.</div></div>
+
+  <div class="card"><div class="card-head"><div class="num-badge nb-coral">F7</div><div><div class="card-title">Irish Whiskey Distillery Trail</div><div class="card-sub"><span class="badge badge-coral">40+ distilleries today — was just 1 in 2010</span></div></div></div><div class="card-desc">Ireland's whiskey revival is one of the great food stories of the last decade. Key stops: Waterford Distillery (single farm origin — unique in the world), Dingle Distillery (Kerry), Slane Distillery (next door to Rock Farm Farmstay FS4). All offer tours and tastings.</div><div class="contact-row"><span class="contact-label">Waterford</span>+353 51 582 874 · info@waterforddistillery.ie</div><div class="contact-row"><span class="contact-label">Dingle</span>+353 66 402 4120 · info@dingledistillery.ie</div><div class="contact-row"><span class="contact-label">Slane</span>+353 41 988 4477 · info@slanedistillery.ie</div></div>
+</div>
+
+</div><!-- end guide-wrap -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <strong>Ireland — A Personal Guide for Sandra &amp; Ted Work</strong><br>
+  Curated with care by Philip · ETA Permits · <a href="https://www.etapermits.com">www.etapermits.com</a><br>
+  <br>
+  September 2026 · First visit · Family roots · A trip of a lifetime<br>
+  <br>
+  <em style="font-size:11px">Guide compiled June 2026. Phone numbers and emails verified at time of publication. Always confirm availability and pricing directly before travel.</em>
+</div>
+
+<script>
+function show(btn, id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>
